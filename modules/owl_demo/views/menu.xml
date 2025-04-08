@@ -1,0 +1,8 @@
+<odoo>
+  <menuitem id="menu_my_owl_root" name="OWL Demo" sequence="10"/>
+
+  <menuitem id="menu_my_owl_demo" name="Mi Componente OWL"
+            parent="menu_my_owl_root"
+            action="action_my_owl_demo"
+            sequence="10"/>
+</odoo>

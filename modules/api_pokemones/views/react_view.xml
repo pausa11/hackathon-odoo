@@ -1,0 +1,11 @@
+<odoo>
+    <template id="react_view_template" name="React App Template">
+        <t t-call="web.layout">
+            <t t-set="head">
+                <link rel="stylesheet" type="text/css" href="/api_pokemones/static/src/react_app/static/css/main.55d67e3b.css"/>
+            </t>
+            <div id="root"></div>
+            <script type="text/javascript" src="/api_pokemones/static/src/react_app/static/js/main.1fd095f6.js"></script>
+        </t>
+    </template>
+</odoo>
