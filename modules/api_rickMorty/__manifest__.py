@@ -1,5 +1,5 @@
 {
-    'name': 'API Pokemones',
+    'name': 'API RickMorty',
     'version': '1.0',
     'depends': ['base', 'web', 'website'],
     'data': [
