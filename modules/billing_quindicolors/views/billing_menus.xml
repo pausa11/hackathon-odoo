@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<odoo>
+    <!-- Cambiar esto para conectar a un menú raíz existente -->
+    <menuitem id="billing_menu_root" 
+              name="Billing" 
+              web_icon="billing_quindicolors,static/description/icon.png"
+              sequence="10"/>
+              
+    <menuitem id="billing_quindicolors_menu" 
+              name="Billing Quindicolors"
+              parent="billing_menu_root"
+              sequence="10"/>
+              
+    <menuitem id="billing_quindicolors_bills_menu" 
+              name="Bills" 
+              parent="billing_quindicolors_menu"
+              action="action_billing_quindicolors_bill"
+              sequence="10"/>
+</odoo>

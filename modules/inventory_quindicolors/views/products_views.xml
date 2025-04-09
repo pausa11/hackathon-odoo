@@ -17,7 +17,6 @@
                 <field name="description"/>
                 <field name="price"/>
                 <field name="quantity"/>
-                <field name="active"/>
             </list>
         </field>
     </record>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_billing_tree" model="ir.ui.view">
+        <field name="name">billing_quindicolors.list</field>
+        <field name="model">billing_quindicolors.bill</field>
+        <field name="arch" type="xml">
+            <list string="Bills">
+                <field name="name"/>
+                <field name="date_created"/>
+                <field name="customer_name"/>
+                <field name="total_amount"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_billing_form" model="ir.ui.view">
+        <field name="name">billing_quindicolors.form</field>
+        <field name="model">billing_quindicolors.bill</field>
+        <field name="arch" type="xml">
+            <form string="Bill">
+                <header>
+                    <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Bill Number"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="customer_name"/>
+                            <field name="date_created"/>
+                        </group>
+                        <group>
+                            <field name="total_amount" widget="monetary"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Bill Lines">
+                            <field name="bill_line_ids">
+                                <list editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="quantity"/>
+                                    <field name="price"/>
+                                    <field name="subtotal" sum="Total"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_billing_quindicolors_bill" model="ir.actions.act_window">
+        <field name="name">Bills</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">billing_quindicolors.bill</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

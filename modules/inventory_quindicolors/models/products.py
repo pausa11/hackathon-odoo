@@ -6,7 +6,6 @@ class Products(models.Model):
 
     name = fields.Char(string="Name",)
     description = fields.Text(string="Description")
-    active = fields.Boolean(default=True)
     state = fields.Selection([
         ("out_of_stock", "Out of Stock"),
         ("discontinued", "Discontinued"),

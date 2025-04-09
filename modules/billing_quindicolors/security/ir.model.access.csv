@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+billing_quindicolors.access_billing_quindicolors_bill,access_billing_quindicolors_bill,billing_quindicolors.model_billing_quindicolors_bill,base.group_user,1,1,1,1
+billing_quindicolors.access_billing_quindicolors_bill_line,access_billing_quindicolors_bill_line,billing_quindicolors.model_billing_quindicolors_bill_line,base.group_user,1,1,1,1
