@@ -16,3 +16,4 @@ class Products(models.Model):
     quantity = fields.Integer(string="Quantity", required=True)
     date_created = fields.Datetime(string="Date Created", default=fields.Datetime.now, readonly=True)
     provider_price = fields.Float(string="Provider Price", required=True)
+    image = fields.Text(string="Image")
