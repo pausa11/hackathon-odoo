@@ -3,9 +3,9 @@
         <t t-call="web.layout">
             <t t-set="title">React App</t>
             <t t-set="assets" t-value="0"/>
-            <link rel="stylesheet" type="text/css" href="/react_web/static/src/react_app/static/css/main.f70c90f1.css"/>
+            <link rel="stylesheet" type="text/css" href="/react_web/static/src/react_app/static/css/main.09b5af80.css"/>
             <div id="root"></div>
-            <script type="text/javascript" src="/react_web/static/src/react_app/static/js/main.687642a7.js"></script>
+            <script type="text/javascript" src="/react_web/static/src/react_app/static/js/main.d92941e3.js"></script>
         </t>
     </template>
 </odoo>
