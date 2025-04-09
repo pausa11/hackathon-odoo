@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="inventory_menu_root" name="Inventory">
+        <menuitem id="inventory_first_level_menu" name="Products">
+            <menuitem id="inventory_product_model_menu_action" action="inventory_product_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>
