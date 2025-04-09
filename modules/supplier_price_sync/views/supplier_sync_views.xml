@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_supplier_price_sync_form" model="ir.ui.view">
+        <field name="name">supplier.price.sync.form</field>
+        <field name="model">supplier.price.sync</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_validate" 
+                            string="Validate" 
+                            type="object" 
+                            class="oe_highlight"
+                            invisible="state != 'draft'"/>
+                    <button name="action_apply" 
+                            string="Apply Changes" 
+                            type="object" 
+                            class="oe_highlight"
+                            invisible="state != 'validated'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="supplier_id"/>
+                            <field name="product_id"/>
+                            <field name="product_code"/>
+                        </group>
+                        <group>
+                            <field name="new_price"/>
+                            <field name="new_stock"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_supplier_price_sync_tree" model="ir.ui.view">
+        <field name="name">supplier.price.sync.list</field>
+        <field name="model">supplier.price.sync</field>
+        <field name="type">list</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="supplier_id"/>
+                <field name="product_id"/>
+                <field name="new_price"/>
+                <field name="new_stock"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_supplier_price_sync" model="ir.actions.act_window">
+        <field name="name">Supplier Price Sync</field>
+        <field name="res_model">supplier.price.sync</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first supplier price sync
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_supplier_price_sync_root"
+        name="Supplier Sync"
+        sequence="10"/>
+
+    <menuitem id="menu_supplier_price_sync"
+        name="Price Synchronization"
+        parent="menu_supplier_price_sync_root"
+        action="action_supplier_price_sync"
+        sequence="10"/>
+</odoo>
