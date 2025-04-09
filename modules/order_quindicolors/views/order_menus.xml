@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="order_quindincolors_menu" name="Order">
+        <menuitem id="order_first_menu" name="Orders">
+            <menuitem id="order_menu_action" action="order_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>
