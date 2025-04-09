@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<templates xml:space="preserve">
-    <t t-name="owl_demo.MyComponent">
-        <div id="my_component" class="flex p-10 bg-black">
-            <p>Contador: <t t-esc="state.count" /></p>
-            <button t-on-click="increment" style="width:50vw;border-radius: 3vw;">Aumentar</button>
-        </div>
-    </t>
-</templates>
