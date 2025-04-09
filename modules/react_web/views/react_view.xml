@@ -1,0 +1,11 @@
+<odoo>
+    <template id="react_view_template" name="React App Template">
+        <t t-call="web.layout">
+            <t t-set="title">React App</t>
+            <t t-set="assets" t-value="0"/>
+            <link rel="stylesheet" type="text/css" href="/react_web/static/src/react_app/static/css/main.e6c13ad2.css"/>
+            <div id="root"></div>
+            <script type="text/javascript" src="/react_web/static/src/react_app/static/js/main.d3c65552.js"></script>
+        </t>
+    </template>
+</odoo>

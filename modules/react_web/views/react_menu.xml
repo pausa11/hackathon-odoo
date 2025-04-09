@@ -1,0 +1,20 @@
+<odoo>
+    <!-- Menú raíz -->
+    <menuitem id="menu_react_web_root"
+              name="React Web"
+              sequence="10"/>
+
+    <!-- Acción que abre la URL /react -->
+    <record id="action_react_web_react_url" model="ir.actions.act_url">
+        <field name="name">React web</field>
+        <field name="url">/react</field>
+        <field name="target">self</field>
+    </record>
+
+    <!-- Submenú correcto -->
+    <menuitem id="menu_react_web_app"
+              name="React App"
+              parent="menu_react_web_root"
+              action="action_react_web_react_url"
+              sequence="1"/>
+</odoo>
