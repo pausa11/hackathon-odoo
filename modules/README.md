@@ -14,3 +14,5 @@ python odoo-bin -c odoo.conf -d 17.0-training -u real_estate --addons-path=/odoo
 //////////////////////////////
 
 python odoo-bin -c odoo.conf -d 18.0-training -u real_estate --addons-path=addons,modules
+
+probando cositas
