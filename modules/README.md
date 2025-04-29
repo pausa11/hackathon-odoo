@@ -17,4 +17,6 @@ python odoo-bin -c odoo.conf -d 18.0-training -u real_estate --addons-path=addon
 
 probando cositas
 
-vw
+esto como funcionadsasdasdusduyeryu
+
+hola clase
