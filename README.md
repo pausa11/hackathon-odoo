@@ -1,2 +1,4 @@
 # hackathon-odoo
-daniel toro - sebastian gil - kevin cano
+daniel toro - sebastian gil -
+
+hola
